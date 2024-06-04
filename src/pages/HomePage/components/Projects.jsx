@@ -1,5 +1,7 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
+import ProjectOne from "../../../assets/project1.jpg";
+import ProjectTwo from "../../../assets/project2.jpg";
 
 function Projects() {
   return (
@@ -17,38 +19,23 @@ function Projects() {
             columns={{ base: 1, sm: 2, md: 3, xl: 4 }}
             gap={"10px"}>
             <Box>
-              <Image
-                {...css.image}
-                src="https://nivakgroup.com/construction/wp-content/uploads/2022/04/04web-768x432.jpg"
-              />
+              <Image {...css.image} src={ProjectOne} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
             <Box>
-              <Image
-                {...css.image}
-                src="https://nivakgroup.com/construction/wp-content/uploads/2022/05/kayasehir-790x400.jpg"
-              />
+              <Image {...css.image} src={ProjectTwo} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
             <Box>
-              <Image
-                {...css.image}
-                src="https://nivakgroup.com/construction/wp-content/uploads/2022/04/05-1-768x543.jpg"
-              />
+              <Image {...css.image} src={ProjectOne} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
             <Box>
-              <Image
-                {...css.image}
-                src="https://nivakgroup.com/construction/wp-content/uploads/2022/04/04-768x543.jpg"
-              />
+              <Image {...css.image} src={ProjectTwo} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
             <Box>
-              <Image
-                {...css.image}
-                src="https://nivakgroup.com/construction/wp-content/uploads/2022/04/02-1-463x400.jpg"
-              />
+              <Image {...css.image} src={ProjectOne} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
           </SimpleGrid>
