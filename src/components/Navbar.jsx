@@ -76,6 +76,13 @@ const css = {
     width: "auto",
     position: "relative",
     paddingBottom: "3px",
+    display: {
+      xl: "inline-block",
+      lg: "inline-block",
+      md: "none",
+      sm: "none",
+      base: "none",
+    },
 
     _hover: {
       color: "#EDCB3F",
@@ -112,7 +119,10 @@ const css = {
     width: "2.6rem",
     height: "2.6rem",
     borderRadius: "50%",
-    display: "flex",
+    display: {
+      base: "none",
+      md: "flex",
+    },
     alignItems: "center",
     justifyContent: "center",
   },
