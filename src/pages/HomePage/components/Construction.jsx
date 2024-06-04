@@ -12,7 +12,10 @@ function Construction() {
             flexDirection={{ base: "column-reverse", md: "row" }}
             align={"center"}
             gap={"50px"}>
-            <Flex flexDirection={{ base: "column", md: "row" }} mt={"25px"} gap={"40px"}>
+            <Flex
+              flexDirection={{ base: "column", md: "row" }}
+              mt={"25px"}
+              gap={"40px"}>
               <Box>
                 <Text {...css.text}>Pre-Project drawings</Text>
                 <Text {...css.text}>
@@ -72,7 +75,10 @@ const css = {
     lineHeight: "24px",
     fontWeight: 400,
     letterSpacing: "0.5px",
-    width: "430px",
+    width: {
+      base: "100%",
+      md: "430px",
+    },
     margin: "10px 0",
   },
   image: {
