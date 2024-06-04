@@ -11,11 +11,11 @@ function Construction() {
           <Flex
             flexDirection={{ base: "column-reverse", md: "row" }}
             align={"center"}
-            gap={"50px"}>
+            gap={{ base: "20px", md: "50px" }}>
             <Flex
               flexDirection={{ base: "column", md: "row" }}
               mt={"25px"}
-              gap={"40px"}>
+              gap={{ base: "20px", md: "40px" }}>
               <Box>
                 <Text {...css.text}>Pre-Project drawings</Text>
                 <Text {...css.text}>
@@ -84,5 +84,9 @@ const css = {
   image: {
     width: "250px",
     objectFit: "contain",
+    marginTop: {
+      base: "30px",
+      md: "0px",
+    },
   },
 };
