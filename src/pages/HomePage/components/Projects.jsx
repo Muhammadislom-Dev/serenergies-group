@@ -68,11 +68,14 @@ const css = {
     display: "flex",
     alignItems: "center",
     fontSize: {
-      base: "30px",
+      base: "25px",
       md: "30px",
       xl: "45px",
     },
-    lineHeight: "55px",
+    lineHeight: {
+      base: "30px",
+      md: "55px",
+    },
     letterSpacing: "1px",
     gap: "10px",
   },
