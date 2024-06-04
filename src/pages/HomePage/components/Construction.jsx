@@ -8,8 +8,11 @@ function Construction() {
       <Box className="container">
         <Heading {...css.name}>CONSTRUCTION</Heading>
         <Fade bottom>
-          <Flex align={"center"} gap={"50px"}>
-            <Flex mt={"25px"} gap={"40px"}>
+          <Flex
+            flexDirection={{ base: "column-reverse", md: "row" }}
+            align={"center"}
+            gap={"50px"}>
+            <Flex flexDirection={{ base: "column", md: "row" }} mt={"25px"} gap={"40px"}>
               <Box>
                 <Text {...css.text}>Pre-Project drawings</Text>
                 <Text {...css.text}>
