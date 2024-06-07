@@ -136,7 +136,10 @@ const css = {
     letterSpacing: "1px",
     marginTop: "20px",
     marginBottom: "20px",
-    width: "400px",
+    width: {
+      base: "100%",
+      md: "400px",
+    },
     color: "#110D60",
   },
 };

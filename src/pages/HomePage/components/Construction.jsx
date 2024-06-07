@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import LogoIcon from "../../../assets/logo1.png";
+import LogoIcon from "../../../assets/black.png";
 import { Fade } from "react-reveal";
 
 function Construction() {
@@ -65,7 +65,11 @@ export default Construction;
 
 const css = {
   name: {
-    fontSize: "45px",
+    fontSize: {
+      base: "30px",
+      md: "30px",
+      xl: "45px",
+    },
     lineHeight: "55px",
     letterSpacing: "1px",
     color: "#110D60",

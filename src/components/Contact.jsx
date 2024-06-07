@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 
 function Contact() {
   return (
-    <Box p={"35px 0"} position={"relative"} zIndex={"9999"}>
+    <Box p={"35px 0"} >
       <Box className="container">
         <Flex
           flexDirection={{ base: "column-reverse", md: "row" }}
@@ -27,8 +27,7 @@ function Contact() {
                   name="email"
                   id="email"
                   className="contact-input"
-                  placeholder="Elektron pochtangizni yoki
-                Telegramni kiriting"
+                  placeholder="Elektron pochtangizni yoki Telegramni kiriting"
                 />
               </label>
               <label htmlFor="phone">
@@ -71,10 +70,13 @@ const css = {
   },
   title: {
     fontSize: {
-      base: "25px",
+      base: "23px",
       md: "35px",
     },
-    lineHeight: "55px",
+    lineHeight: {
+      base: "30px",
+      md: "55px",
+    },
     letterSpacing: "1px",
     color: "#110D60",
   },

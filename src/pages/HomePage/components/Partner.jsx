@@ -6,7 +6,9 @@ function Partner() {
     <Box id="gallery" padding={"30px 0"} mt="50px">
       <Box className="container">
         <Heading {...css.title}>OUR CLIENTS</Heading>
-        <SimpleGrid gap={"20px"} columns={{ base: 2, md: 3, xl: 4 }}>
+        <SimpleGrid
+          gap={{ base: "10px", md: "20px" }}
+          columns={{ base: 2, md: 3, xl: 4 }}>
           {partnerData.map((evt, index) => (
             <Box key={index} {...css.box}>
               <Image {...css.image} src={evt?.image.type} />
@@ -58,7 +60,7 @@ const css = {
     boxShadow: "0 9px 18px 0 rgba(144,173,248,0.25)",
     background: "#fff",
     borderRadius: "12px",
-    margin: "0 25px",
+    // margin: "0 25px",
     display: "flex !important",
     alignItems: "center",
     justifyContent: "center",

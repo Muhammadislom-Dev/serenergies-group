@@ -77,8 +77,8 @@ const css = {
     position: "relative",
     paddingBottom: "3px",
     display: {
-      xl: "inline-block",
-      lg: "inline-block",
+      xl: "flex",
+      lg: "flex",
       md: "none",
       sm: "none",
       base: "none",
