@@ -31,7 +31,7 @@ function Navbar() {
                 <Image {...css.image} src={LogoIcon} />
               </Link>
               <Flex gap={"15px"} align={"center"}>
-                <Link  className="navbar-links" href="#">
+                <Link className="navbar-links" href="#">
                   <Instagram />
                 </Link>
                 <Link className="navbar-links" href="#">
@@ -70,6 +70,8 @@ const css = {
   image: {
     width: "100px",
     objectFit: "contain",
+    position: "relative",
+    right: "90px",
   },
   link: {
     color: "#fff",

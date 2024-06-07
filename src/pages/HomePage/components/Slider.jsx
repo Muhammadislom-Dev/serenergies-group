@@ -7,6 +7,17 @@ import "swiper/css/navigation";
 
 import { Fade } from "react-reveal";
 
+import ZaraHome from "../../../assets/zarahome.png";
+import ZaraHome1 from "../../../assets/zarahome1.png";
+import Swiss from "../../../assets/swiss.png";
+import Piquadro from "../../../assets/piquadro.png";
+import Oysho from "../../../assets/oysho.png";
+import Oysho1 from "../../../assets/oysho1.png";
+import Stradivarius from "../../../assets/stradivarius.png";
+import Swiss1 from "../../../assets/swiss1.png";
+import Project3 from "../../../assets/project3.png";
+import Kids from "../../../assets/kids.png";
+
 function Slider() {
   return (
     <Box p={"35px 0"}>
@@ -25,22 +36,19 @@ function Slider() {
                 modules={[Navigation, Mousewheel]}
                 className="mySwiper">
                 <SwiperSlide>
-                  <Image
-                    {...css.image}
-                    src="https://mirabad.uz/upload/resize_cache/resized/w1160/cc980fb0cd67e9996e8309f7a12f8fc3.webp"
-                  />
+                  <Image {...css.image} src={Swiss} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Image
-                    {...css.image}
-                    src="https://mirabad.uz/upload/resize_cache/resized/w1160/caa4c8b06e1cfbb147f5d6ba58bd6542.webp"
-                  />
+                  <Image {...css.image} src={ZaraHome} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Image
-                    {...css.image}
-                    src="https://mirabad.uz/upload/resize_cache/resized/w1160/b515ac703ca97fae08661cea79284ecf.webp"
-                  />
+                  <Image {...css.image} src={Piquadro} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image {...css.image} src={Stradivarius} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image {...css.image} src={Oysho} />
                 </SwiperSlide>
               </Swiper>
             </Fade>
@@ -87,22 +95,19 @@ function Slider() {
                 modules={[Navigation, Mousewheel]}
                 className="mySwiper">
                 <SwiperSlide>
-                  <Image
-                    {...css.image}
-                    src="https://mirabad.uz/upload/resize_cache/resized/w1160/cc980fb0cd67e9996e8309f7a12f8fc3.webp"
-                  />
+                  <Image {...css.image} src={ZaraHome1} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Image
-                    {...css.image}
-                    src="https://mirabad.uz/upload/resize_cache/resized/w1160/caa4c8b06e1cfbb147f5d6ba58bd6542.webp"
-                  />
+                  <Image {...css.image} src={Oysho1} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Image
-                    {...css.image}
-                    src="https://mirabad.uz/upload/resize_cache/resized/w1160/b515ac703ca97fae08661cea79284ecf.webp"
-                  />
+                  <Image {...css.image} src={Kids} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image {...css.image} src={Project3} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image {...css.image} src={Swiss1} />
                 </SwiperSlide>
               </Swiper>
             </Fade>
@@ -119,7 +124,7 @@ const css = {
   box: {
     width: {
       base: "100%",
-      md: "55%",
+      md: "43%",
     },
   },
   title: {
@@ -141,5 +146,16 @@ const css = {
       md: "400px",
     },
     color: "#110D60",
+  },
+  image: {
+    height: {
+      base: "330px",
+      md: "500px",
+    },
+    width: "100%",
+    objectFit: {
+      base: "cover",
+      md: "cover",
+    },
   },
 };

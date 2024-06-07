@@ -17,7 +17,12 @@ function NavModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <HamburgerIcon className="modal-button" color={"white"} fontSize={"30px"} onClick={onOpen} />
+      <HamburgerIcon
+        className="modal-button"
+        color={"white"}
+        fontSize={"30px"}
+        onClick={onOpen}
+      />
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalContent className="navbar-modal">
           <ModalCloseButton color={"white"} fontSize={"25px"} />
@@ -54,6 +59,17 @@ function NavModal() {
                   <Phone />
                 </Link>
               </Flex>
+              <Link
+                display={"flex"}
+                alignItems={"center"}
+                gap={"10px"}
+                {...css.link}
+                href="tel:+998935527217">
+                +998 93 552 72 17
+                <Box {...css.links}>
+                  <Phone />
+                </Box>
+              </Link>
             </Flex>
           </Box>
         </ModalContent>
@@ -93,5 +109,14 @@ const css = {
       borderRadius: "23px 10px 0px 0px",
       transition: "0.3s",
     },
+  },
+  links: {
+    backgroundColor: "#EDCB3F",
+    width: "2.6rem",
+    height: "2.6rem",
+    borderRadius: "50%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 };
