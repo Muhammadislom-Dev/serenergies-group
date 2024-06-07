@@ -14,7 +14,7 @@ function HomePage() {
       <Slider />
       <Projects />
       <Partner />
-      <Feedback />
+      {/* <Feedback /> */}
       <Contact />
     </>
   );

@@ -74,6 +74,14 @@
   flex-direction: column;
 }
 
+.navbar-links svg path {
+  transition: 0.3s all;
+}
+
+.navbar-links svg path:hover {
+  fill: #edcb3f;
+}
+
 .navbar-link svg path {
   transition: 0.3s all;
 }
@@ -86,13 +94,32 @@
   width: 100%;
   height: 100%;
 }
-.feedback-form{
-  padding:15px 10px;
+.feedback-form {
+  padding: 15px 10px;
+}
+
+.chakra-modal__content-container {
+  z-index: 99999 !important;
+}
+
+.navbar-modal {
+  margin: 0 !important;
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0) !important;
+}
+.modal-button{
+  display: none !important; 
 }
 
 @media (max-width: 768px) {
   .container {
     width: 100% !important;
+  }
+  .navbar-links{
+    display: none !important;
+  }
+  .modal-button{
+    display: block !important;
   }
 }
 
@@ -105,4 +132,5 @@
   .footer-location {
     width: 100% !important;
   }
+
 }

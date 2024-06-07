@@ -4,59 +4,63 @@ import Instagram from "../assets/Instagram";
 import Telegram from "../assets/Telegram";
 import Facebook from "../assets/Facebook";
 import Phone from "../assets/Phone";
+import NavModal from "./NavModal";
 
 function Navbar() {
   return (
-    <Box {...css.box}>
-      <Box className="container">
-        <Box className="row">
-          <Flex {...css.list}>
-            <Flex gap={"30px"}>
-              <Link {...css.link} href="/">
-                About Us
+    <>
+      <Box {...css.box}>
+        <Box className="container">
+          <Box className="row">
+            <Flex {...css.list}>
+              <Flex gap={"30px"}>
+                <Link {...css.link} href="/">
+                  About Us
+                </Link>
+                <Link {...css.link} href="/">
+                  Projects
+                </Link>
+                <Link {...css.link} href="/">
+                  News
+                </Link>
+                <Link {...css.link} href="/">
+                  Contact
+                </Link>
+              </Flex>
+              <Link href="/">
+                <Image {...css.image} src={LogoIcon} />
               </Link>
-              <Link {...css.link} href="/">
-                Projects
-              </Link>
-              <Link {...css.link} href="/">
-                News
-              </Link>
-              <Link {...css.link} href="/">
-                Contact
+              <Flex gap={"15px"} align={"center"}>
+                <Link  className="navbar-links" href="#">
+                  <Instagram />
+                </Link>
+                <Link className="navbar-links" href="#">
+                  <Telegram />
+                </Link>
+                <Link className="navbar-links" href="#">
+                  <Facebook />
+                </Link>
+                <Link className="navbar-links" href="#">
+                  <Phone />
+                </Link>
+                <NavModal />
+              </Flex>
+              <Link
+                display={"flex"}
+                alignItems={"center"}
+                gap={"10px"}
+                {...css.link}
+                href="tel:+998935527217">
+                +998 93 552 72 17
+                <Box {...css.links}>
+                  <Phone />
+                </Box>
               </Link>
             </Flex>
-            <Link href="/">
-              <Image {...css.image} src={LogoIcon} />
-            </Link>
-            <Flex gap={"15px"} align={"center"}>
-              <Link className="navbar-link" href="#">
-                <Instagram />
-              </Link>
-              <Link className="navbar-link" href="#">
-                <Telegram />
-              </Link>
-              <Link className="navbar-link" href="#">
-                <Facebook />
-              </Link>
-              <Link className="navbar-link" href="#">
-                <Phone />
-              </Link>
-            </Flex>
-            <Link
-              display={"flex"}
-              alignItems={"center"}
-              gap={"10px"}
-              {...css.link}
-              href="tel:+998935527217">
-              +998 93 552 72 17
-              <Box {...css.links}>
-                <Phone />
-              </Box>
-            </Link>
-          </Flex>
+          </Box>
         </Box>
       </Box>
-    </Box>
+    </>
   );
 }
 
