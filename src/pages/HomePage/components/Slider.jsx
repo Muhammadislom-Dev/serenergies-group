@@ -7,15 +7,15 @@ import "swiper/css/navigation";
 
 import { Fade } from "react-reveal";
 
-import ZaraHome from "../../../assets/zarahome.png";
-import ZaraHome1 from "../../../assets/zarahome1.png";
-import Swiss from "../../../assets/swiss.png";
+import ZaraHome from "../../../assets/image2.png";
+import ZaraHome1 from "../../../assets/image3.png";
+import Swiss from "../../../assets/image4.png";
 import Piquadro from "../../../assets/piquadro.png";
 import Oysho from "../../../assets/oysho.png";
 import Oysho1 from "../../../assets/oysho1.png";
 import Stradivarius from "../../../assets/stradivarius.png";
 import Swiss1 from "../../../assets/swiss1.png";
-import Project3 from "../../../assets/project3.png";
+import Project3 from "../../../assets/image1.png";
 import Kids from "../../../assets/kids.png";
 
 function Slider() {
@@ -36,16 +36,16 @@ function Slider() {
                 modules={[Navigation, Mousewheel]}
                 className="mySwiper">
                 <SwiperSlide>
-                  <Image {...css.image} src={Swiss} />
+                  <Image {...css.image} src={Project3} />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image {...css.image} src={ZaraHome} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Image {...css.image} src={Piquadro} />
+                  <Image {...css.image} src={ZaraHome1} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Image {...css.image} src={Stradivarius} />
+                  <Image {...css.image} src={Swiss} />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image {...css.image} src={Oysho} />
@@ -124,7 +124,7 @@ const css = {
   box: {
     width: {
       base: "100%",
-      md: "43%",
+      md: "55%",
     },
   },
   title: {
@@ -150,7 +150,7 @@ const css = {
   image: {
     height: {
       base: "330px",
-      md: "500px",
+      md: "480px",
     },
     width: "100%",
     objectFit: {

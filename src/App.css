@@ -107,18 +107,36 @@
   height: 100vh !important;
   background-color: rgba(0, 0, 0) !important;
 }
-.modal-button{
-  display: none !important; 
+.modal-button {
+  display: none !important;
+}
+
+.news-title {
+  height: 3.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+}
+
+.news-link {
+  background-color: #edcb3f;
+  color: #fff;
+  padding: 0.5rem 3rem;
+  position: relative;
+  left: 30%;
+  bottom:-14px;
 }
 
 @media (max-width: 768px) {
   .container {
     width: 100% !important;
   }
-  .navbar-links{
+  .navbar-links {
     display: none !important;
   }
-  .modal-button{
+  .modal-button {
     display: block !important;
   }
 }
@@ -132,5 +150,4 @@
   .footer-location {
     width: 100% !important;
   }
-
 }

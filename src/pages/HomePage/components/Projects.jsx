@@ -2,6 +2,9 @@ import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
 import ProjectOne from "../../../assets/project1.jpg";
 import ProjectTwo from "../../../assets/project2.jpg";
+import ZaraHome from "../../../assets/image2.png";
+import ZaraHome1 from "../../../assets/image3.png";
+import Swiss from "../../../assets/image4.png";
 
 function Projects() {
   return (
@@ -16,22 +19,22 @@ function Projects() {
         <Fade bottom>
           <SimpleGrid
             mt={"30px"}
-            columns={{ base: 1, sm: 2, md: 3, xl: 4 }}
+            columns={{ base: 1, sm: 2 }}
             gap={"10px"}>
             <Box>
-              <Image {...css.image} src={ProjectOne} />
+              <Image {...css.image} src={'https://avatars.mds.yandex.net/get-altay/1595534/2a0000016dabf5e33e43247ed7850cb5acbb/orig'} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
             <Box>
-              <Image {...css.image} src={ProjectTwo} />
+              <Image {...css.image} src={ZaraHome} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
             <Box>
-              <Image {...css.image} src={ProjectOne} />
+              <Image {...css.image} src={ZaraHome1} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
             <Box>
-              <Image {...css.image} src={ProjectTwo} />
+              <Image {...css.image} src={Swiss} />
               <Text {...css.text}>FLORYA RESIDENCES</Text>
             </Box>
             <Box>
@@ -67,7 +70,7 @@ const css = {
     gap: "10px",
   },
   image: {
-    height: "230px",
+    height: "400px",
     objectFit: "cover",
     width: "100%",
   },
