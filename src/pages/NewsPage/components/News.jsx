@@ -5,6 +5,7 @@ function News() {
   return (
     <Box p={"50px 0"}>
       <Box className="container">
+        <Heading {...css.name}>All News</Heading>
         <SimpleGrid gap={"30px"} columns={3}>
           <Box {...css.box}>
             <Flex {...css.list}>
@@ -83,6 +84,12 @@ const css = {
       "0px 20px 13px rgba(0, 0, 0, 0.035), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519)",
     background: "#fff",
     paddingBottom: "20px",
+    transition: "0.3s ease-in-out",
+
+    _hover: {
+      boxShadow:
+        "0px 100px 80px rgba(0, 0, 0, 0.07), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 20px 13px rgba(0, 0, 0, 0.035), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519)",
+    },
   },
   list: {
     padding: "0 2rem",
@@ -118,5 +125,13 @@ const css = {
     color: "#EDCB3F",
     fontSize: "14px",
     fontWeight: 600,
+  },
+  name: {
+    fontSize: "30px",
+    lineHeight: "35px",
+    fontWeight: 600,
+    letterSpacing: "1px",
+    color: "#110D60",
+    marginBottom: "3rem",
   },
 };

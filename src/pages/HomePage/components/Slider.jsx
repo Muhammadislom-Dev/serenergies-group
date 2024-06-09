@@ -150,7 +150,7 @@ const css = {
   image: {
     height: {
       base: "330px",
-      md: "480px",
+      md: "450px",
     },
     width: "100%",
     objectFit: {

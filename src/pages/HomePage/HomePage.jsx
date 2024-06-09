@@ -1,4 +1,5 @@
 import Contact from "../../components/Contact";
+import Navbar from "../../components/Navbar";
 import Construction from "./components/Construction";
 import Feedback from "./components/Feedback";
 import Header from "./components/Header";
@@ -9,6 +10,7 @@ import Slider from "./components/Slider";
 function HomePage() {
   return (
     <>
+      <Navbar />
       <Header />
       <Construction />
       <Slider />

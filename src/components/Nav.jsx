@@ -7,15 +7,15 @@ import Phone from "../assets/Phone";
 import NavModal from "./NavModal";
 import { Link as Alink } from "react-router-dom";
 
-function Navbar() {
+function Nav() {
   return (
     <>
-      <Box {...css.box}>
+      <Box p={"10px 0"}>
         <Box className="container">
           <Box className="row">
             <Flex {...css.list}>
               <Flex gap={"30px"}>
-                <Alink to={'/about'}>
+                <Alink to={"/about"}>
                   <Link {...css.link} href="/">
                     About Us
                   </Link>
@@ -36,16 +36,16 @@ function Navbar() {
                 <Image {...css.image} src={LogoIcon} />
               </Alink>
               <Flex gap={"15px"} align={"center"}>
-                <Link className="navbar-links" href="#">
+                <Link className="navbar-links nav-link" href="#">
                   <Instagram />
                 </Link>
-                <Link className="navbar-links" href="#">
+                <Link className="navbar-links nav-link" href="#">
                   <Telegram />
                 </Link>
-                <Link className="navbar-links" href="#">
+                <Link className="navbar-links nav-link" href="#">
                   <Facebook />
                 </Link>
-                <Link className="navbar-links" href="#">
+                <Link className="navbar-links nav-link" href="#">
                   <Phone />
                 </Link>
                 <NavModal />
@@ -69,7 +69,7 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Nav;
 
 const css = {
   image: {
@@ -79,11 +79,11 @@ const css = {
     right: "90px",
   },
   link: {
-    color: "#fff",
+    color: "#110D60",
     fontSize: "16px",
     lineHeight: "24px",
     transition: "0.3s all",
-    fontWeight: "bold",
+    fontWeight: "600",
     width: "auto",
     position: "relative",
     paddingBottom: "3px",
@@ -117,13 +117,6 @@ const css = {
   list: {
     alignItems: "center",
     justifyContent: "space-between",
-    backgroundColor: "rgba(0,0,0,0.9)",
-    borderRadius: "0 0 1.5rem 1.5rem",
-    boxShadow: "0px 0.2rem 1.5rem rgba(0, 0, 0, 0.25)",
-    padding: "10px 25px",
-    fontWeight: "500",
-    position: "relative",
-    zIndex: "9999",
   },
   links: {
     backgroundColor: "#EDCB3F",

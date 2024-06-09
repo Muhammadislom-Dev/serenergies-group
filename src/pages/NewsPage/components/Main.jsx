@@ -3,7 +3,7 @@ import NewsBgImage from "../../../assets/news-bg.jpg";
 
 function Main() {
   return (
-    <Box p={'6.5rem 0'} m={'15px 0'} position={"relative"}>
+    <Box p={'6.5rem 0'}  position={"relative"}>
       <Box {...css.box}>
         <Image {...css.image} src={NewsBgImage} alt="news-bg" className="news-bg-image" />
       </Box>

@@ -1,15 +1,15 @@
 import Nav from "../../components/Nav";
+import About from "./components/About";
 import Main from "./components/Main";
-import News from "./components/News";
 
-function NewsPage() {
+function AboutUsPage() {
   return (
     <>
       <Nav />
+      <About />
       <Main />
-      <News />
     </>
   );
 }
 
-export default NewsPage;
+export default AboutUsPage;
