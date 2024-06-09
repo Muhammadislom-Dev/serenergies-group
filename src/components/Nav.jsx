@@ -6,8 +6,10 @@ import Facebook from "../assets/Facebook";
 import Phone from "../assets/Phone";
 import NavModal from "./NavModal";
 import { Link as Alink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Nav() {
+  const { t } = useTranslation();
   return (
     <>
       <Box p={"10px 0"}>
@@ -17,19 +19,19 @@ function Nav() {
               <Flex gap={"30px"}>
                 <Alink to={"/about"}>
                   <Link {...css.link} href="/">
-                    About Us
+                    {t("About Us")}
                   </Link>
                 </Alink>
-                <Link {...css.link} href="/">
-                  Projects
+                <Link {...css.link} href="#project">
+                  {t("Projects")}
                 </Link>
                 <Alink to={"/news"}>
                   <Link {...css.link} href="/">
-                    News
+                    {t("News")}
                   </Link>
                 </Alink>
-                <Link {...css.link} href="/">
-                  Contact
+                <Link {...css.link} href="#contact">
+                  {t("Contact")}
                 </Link>
               </Flex>
               <Alink to="/">

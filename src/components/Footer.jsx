@@ -5,19 +5,23 @@ import Facebook from "../assets/Facebook";
 import Phone from "../assets/Phone";
 import Iframe from "react-iframe";
 import OfficeImage from "../assets/05.svg";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <Box {...css.box}>
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         justifyContent={"space-between"}>
         <Box padding={{ base: "20px 30px", md: "20px 120px" }}>
-          <Heading {...css.title}>Contact</Heading>
-          <Text {...css.name}>Company address / Central Sales Office:</Text>
+          <Heading {...css.title}>{t("Contact")}</Heading>
+          <Text {...css.name}>
+            {t("Company address / Central Sales Office:")}
+          </Text>
           <Text {...css.text}>Tashkent, Olmazor district, Kokzor Tor 15</Text>
           <Text {...css.name}>
-            Sales office on the territory of the project:
+            {t("Sales office on the territory of the project:")}
           </Text>
           <Text {...css.text}>Tashkent, Olmazor district, Kokzor Tor 15</Text>
           <Text {...css.name}>Phone:</Text>
@@ -27,13 +31,13 @@ function Footer() {
           <Link {...css.text} pl={"20px"} href="tel:+998958437717">
             +998 95 843 77 17
           </Link>
-          <Text {...css.name}>Mail:</Text>
+          <Text {...css.name}>{t("Mail:")}</Text>
           <Link {...css.text} href="#">
             info@group.uz
           </Link>
-          <Text {...css.name}>Working schedule:</Text>
+          <Text {...css.name}>{t("Working schedule:")}</Text>
           <Text {...css.text}>Monday - Friday: 9:00 - 18:00</Text>
-          <Text {...css.name}>We are in social networks</Text>
+          <Text {...css.name}>{t("We are in social networks")}</Text>
           <Flex gap={"15px"} align={"center"}>
             <Link className="navbar-link" href="#">
               <Instagram />

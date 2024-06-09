@@ -3,15 +3,17 @@ import { Fade } from "react-reveal";
 import ZaraHome from "../../../assets/image2.png";
 import Swiss from "../../../assets/image4.png";
 import Project3 from "../../../assets/image1.png";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
   return (
     <Box id="project" {...css.box}>
       <Box className="container">
         <Heading color={"#110D60"} {...css.name}>
-          REAL ESTATE{" "}
+          {t("REAL ESTATE")}{" "}
           <Heading color={"#EDCB3F"} {...css.name}>
-            PROJECTS
+            {t("PROJECTS")}
           </Heading>{" "}
         </Heading>
         <Fade bottom>

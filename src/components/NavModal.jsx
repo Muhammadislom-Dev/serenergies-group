@@ -12,9 +12,11 @@ import Instagram from "../assets/Instagram";
 import Telegram from "../assets/Telegram";
 import Facebook from "../assets/Facebook";
 import Phone from "../assets/Phone";
+import { useTranslation } from "react-i18next";
 
 function NavModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { t } = useTranslation();
   return (
     <>
       <HamburgerIcon
@@ -34,16 +36,16 @@ function NavModal() {
               flexDirection={"column"}
               gap={"20px"}>
               <Link {...css.link} href="/">
-                About Us
+                {t("About Us")}
               </Link>
               <Link {...css.link} href="/">
-                Projects
+                {t("Projects")}
               </Link>
               <Link {...css.link} href="/">
-                News
+                {t("News")}
               </Link>
               <Link {...css.link} href="/">
-                Contact
+                {t("Contact")}
               </Link>
               <Flex align={"center"} gap={"25px"}>
                 <Link className="navbar-link" href="#">

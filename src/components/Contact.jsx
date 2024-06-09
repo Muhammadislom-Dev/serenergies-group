@@ -1,5 +1,6 @@
 import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
   const [nameValue, setNameValue] = useState("");
@@ -53,6 +54,8 @@ function Contact() {
       }
     );
   }
+
+  const { t } = useTranslation();
   return (
     <Box id="contact" p={"35px 0"}>
       <Box className="container">
@@ -60,10 +63,12 @@ function Contact() {
           flexDirection={{ base: "column-reverse", md: "row" }}
           justifyContent={"space-evenly"}>
           <Box>
-            <Heading {...css.title}>Bizga qanday savolingiz bor?</Heading>
+            <Heading {...css.title}>
+              {t("Bizga qanday savolingiz bor?")}
+            </Heading>
             <form className="form" action="">
               <label htmlFor="username">
-                Ism
+                {t("Ism")}
                 <input
                   type="text"
                   name="username"
@@ -71,11 +76,11 @@ function Contact() {
                   onChange={(e) => changeName(e.target.value)}
                   id="username"
                   className="contact-input"
-                  placeholder="Ismingizni kiriting"
+                  placeholder={t("Ismingizni kiriting")}
                 />
               </label>
               <label htmlFor="email">
-                Elektron pochta yoki Telegram
+                {t("Elektron pochta yoki Telegram")}
                 <input
                   type="text"
                   name="email"
@@ -83,11 +88,11 @@ function Contact() {
                   onChange={(e) => changeName(e.target.value)}
                   id="email"
                   className="contact-input"
-                  placeholder="Elektron pochtangizni yoki Telegramni kiriting"
+                  placeholder={t("Elektron pochta yoki Telegram")}
                 />
               </label>
               <label htmlFor="phone">
-                Telefon raqami
+                {t("Telefon raqami")}
                 <input
                   type="number"
                   name="phone"
@@ -99,11 +104,11 @@ function Contact() {
                 />
               </label>
               <label htmlFor="text">
-                Sizning xabaringiz
+                {t("Sizning xabaringiz")}
                 <textarea
                   name="text"
                   className="contact-input"
-                  placeholder="Sizning xabaringiz"
+                  placeholder={t("Sizning xabaringiz")}
                   rows="5"
                   value={textValue}
                   onChange={(e) => changeText(e.target.value)}
@@ -111,7 +116,7 @@ function Contact() {
                   id="text"></textarea>
               </label>
               <Button onClick={sendMessage} {...css.button} type="submit">
-                Yuborish
+                {t("Yuborish")}
               </Button>
             </form>
           </Box>

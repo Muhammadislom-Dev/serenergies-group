@@ -2,6 +2,7 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import AvatarIcon from "../../../assets/avatar.svg";
 import FeedbackModal from "./FeedbackModal";
+import { useTranslation } from "react-i18next";
 
 function Feedback() {
   var settings = {
@@ -36,6 +37,7 @@ function Feedback() {
     ],
   };
 
+  const { t } = useTranslation();
   return (
     <>
       <Box {...css.box}>
@@ -45,9 +47,9 @@ function Feedback() {
             align={{ base: "baseline", md: "center" }}
             justifyContent={"space-between"}>
             <Heading mb={"30px"} color={"#110D60"} {...css.name}>
-              Reviews{" "}
+              {t("Reviews")}{" "}
               <Heading color={"#EDCB3F"} {...css.name}>
-                About us
+                {t("About Us")}
               </Heading>{" "}
             </Heading>
             <FeedbackModal />

@@ -1,32 +1,31 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import BgImage from "../../../assets/build.jpg";
 import LogoIcon from "../../../assets/black.png";
+import { useTranslation } from "react-i18next";
 
 function Main() {
+  const { t } = useTranslation();
   return (
     <Box {...css.box}>
       <Box {...css.image}>
         <Image className="bg-image" src={BgImage} alt="BgImage" />
       </Box>
       <Box position={"relative"} zIndex={"2"} className="container">
-        <Heading {...css.title}>Мы строим счастье</Heading>
+        <Heading {...css.title}>{t("Мы строим счастье")}</Heading>
         <Flex justifyContent={"space-between"} align={"center"}>
           <Box {...css.left}>
             <Image {...css.logo} src={LogoIcon} alt="LogoIcon" />
           </Box>
           <Box {...css.card}>
             <Text {...css.text}>
-              Одна из ведущих и быстро развивающихся девелоперских компаний с{" "}
-              <b style={{ color: "#EDCB3F" }}>20 летним</b> опытом на рынке.
-              Деятельность компании направлена на создание уникальных жилых
-              комплексов, отличающихся своей инновационностью, смарт-подходом и
-              высоким качеством.
+              {t(
+                " Одна из ведущих и быстро развивающихся девелоперских компаний с 20 летним опытом на рынке. Деятельность компании направлена на создание уникальных жилых комплексов, отличающихся своей инновационностью, смарт-подходом и высоким качеством."
+              )}
             </Text>
             <Text {...css.text}>
-              <b style={{ color: "#EDCB3F" }}>Ser Energies</b> - это также
-              пример социального бизнеса. Благотворительность поддержка молодежи
-              и творчества, социальные и образовательные проекты являются
-              неотъемлемой частью деятельности компании
+              {t(
+                "Ser Energies - это также пример социального бизнеса. Благотворительность поддержка молодежи и творчества, социальные и образовательные проекты являются неотъемлемой частью деятельности компании"
+              )}
             </Text>
           </Box>
         </Flex>
@@ -51,7 +50,6 @@ const css = {
     padding: "6.5rem 0 9.5rem",
     position: "relative",
     overflow: "hidden",
-    marginTop:"-30px"
   },
   title: {
     color: "#110D60",

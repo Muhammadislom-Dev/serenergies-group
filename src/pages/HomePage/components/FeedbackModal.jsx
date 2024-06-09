@@ -6,9 +6,11 @@ import {
   ModalCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 function FeedbackModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { t } = useTranslation();
   return (
     <>
       <Button onClick={onOpen} {...css.buttons}>
@@ -24,27 +26,27 @@ function FeedbackModal() {
           <ModalCloseButton />
           <form className="form feedback-form" action="">
             <label htmlFor="username">
-              Ism
+              {t("Ism")}
               <input
                 type="text"
                 name="username"
                 id="username"
                 className="contact-input"
-                placeholder="Ismingizni kiriting"
+                placeholder={t("Ismingizni kiriting")}
               />
             </label>
             <label htmlFor="email">
-              Elektron pochta yoki Telegram
+              {t("Elektron pochta yoki Telegram")}
               <input
                 type="text"
                 name="email"
                 id="email"
                 className="contact-input"
-                placeholder="Elektron pochtangizni yoki Telegramni kiriting"
+                placeholder={t("Elektron pochta yoki Telegram")}
               />
             </label>
             <label htmlFor="phone">
-              Telefon raqami
+              {t("Telefon raqami")}
               <input
                 type="number"
                 name="phone"
@@ -54,17 +56,17 @@ function FeedbackModal() {
               />
             </label>
             <label htmlFor="text">
-              Sizning xabaringiz
+              {t("Sizning xabaringiz")}
               <textarea
                 name="text"
                 className="contact-input"
-                placeholder="Sizning xabaringiz"
+                placeholder={t("Sizning xabaringiz")}
                 rows="5"
                 cols="50"
                 id="text"></textarea>
             </label>
             <Button {...css.button} type="submit">
-              Yuborish
+              {t("Yuborish")}
             </Button>
           </form>
         </ModalContent>

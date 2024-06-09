@@ -1,12 +1,14 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import LogoIcon from "../../../assets/black.png";
 import { Fade } from "react-reveal";
+import { useTranslation } from "react-i18next";
 
 function Construction() {
+  const { t } = useTranslation();
   return (
     <Box p={"35px 0"}>
       <Box className="container">
-        <Heading {...css.name}>CONSTRUCTION</Heading>
+        <Heading {...css.name}>{t("CONSTRUCTION")}</Heading>
         <Fade bottom>
           <Flex
             flexDirection={{ base: "column-reverse", md: "row" }}
@@ -17,39 +19,49 @@ function Construction() {
               mt={"25px"}
               gap={{ base: "20px", md: "40px" }}>
               <Box>
-                <Text {...css.text}>Pre-Project drawings</Text>
+                <Text {...css.text}>{t("Pre-Project drawings")}</Text>
                 <Text {...css.text}>
-                  Drawing construction project according the main project
-                  design.
+                  {t(
+                    "Drawing construction project according the main project design."
+                  )}
                 </Text>
-                <Text {...css.text}>As-Built Drawings</Text>
+                <Text {...css.text}>{t("As-Built Drawings")}</Text>
                 <Text {...css.text}>
-                  Supporting the architects, electric and mechanical teams
+                  {t(
+                    "Supporting the architects, electric and mechanical teams"
+                  )}
                 </Text>
                 <Text {...css.text}>
-                  Drawing all shop drawings and As-Builts
+                  {t("Drawing all shop drawings and As-Builts")}
                 </Text>
               </Box>
               <Box>
                 <Text {...css.text}>
-                  Preparing letting of the contract, pre-analyzing of the
-                  project, project documents, and proposal lists
+                  {t(
+                    "Preparing letting of the contract, pre-analyzing of the project, project documents, and proposal lists"
+                  )}
                 </Text>
                 <Text {...css.text}>
-                  Qualified furniture manufacturing and equipment sourcing
+                  {t(
+                    "Qualified furniture manufacturing and equipment sourcing"
+                  )}
                 </Text>
-                <Text {...css.text}>Design and construction coordination</Text>
-                <Text {...css.text}>Controlling and Supervising</Text>
                 <Text {...css.text}>
-                  Planning of the project and budget, reporting the processes,
+                  {t("Design and construction coordination")}
                 </Text>
-                <Text {...css.text}>Turn-Key projects</Text>
+                <Text {...css.text}>{t("Controlling and Supervising")}</Text>
                 <Text {...css.text}>
-                  Design&Build modeliyle tasarım ve uygulama hizmeti
+                  {t(
+                    "Planning of the project and budget, reporting the processes,"
+                  )}
                 </Text>
-                <Text {...css.text}>Mapping services</Text>
+                <Text {...css.text}>{t("Turn-Key projects")}</Text>
                 <Text {...css.text}>
-                  Occupational health and safety management
+                  {t("Design&Build modeliyle tasarım ve uygulama hizmeti")}
+                </Text>
+                <Text {...css.text}>{t("Mapping services")}</Text>
+                <Text {...css.text}>
+                  {t("Occupational health and safety management")}
                 </Text>
               </Box>
             </Flex>
