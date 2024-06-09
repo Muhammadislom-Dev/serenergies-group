@@ -6,7 +6,7 @@ import Project3 from "../../../assets/image1.png";
 
 function Projects() {
   return (
-    <Box {...css.box}>
+    <Box id="project" {...css.box}>
       <Box className="container">
         <Heading color={"#110D60"} {...css.name}>
           REAL ESTATE{" "}

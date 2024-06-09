@@ -54,7 +54,7 @@ function Contact() {
     );
   }
   return (
-    <Box p={"35px 0"}>
+    <Box id="contact" p={"35px 0"}>
       <Box className="container">
         <Flex
           flexDirection={{ base: "column-reverse", md: "row" }}

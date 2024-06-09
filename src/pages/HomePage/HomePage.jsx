@@ -1,5 +1,6 @@
 import Contact from "../../components/Contact";
 import Navbar from "../../components/Navbar";
+import Statistic from "../../components/Statistic";
 import Construction from "./components/Construction";
 import Feedback from "./components/Feedback";
 import Header from "./components/Header";
@@ -15,6 +16,7 @@ function HomePage() {
       <Construction />
       <Slider />
       <Projects />
+      <Statistic />
       <Partner />
       <Feedback />
       <Contact />

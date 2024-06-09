@@ -6,6 +6,7 @@ import Facebook from "../assets/Facebook";
 import Phone from "../assets/Phone";
 import NavModal from "./NavModal";
 import { Link as Alink } from "react-router-dom";
+import Language from "./Language";
 
 function Navbar() {
   return (
@@ -15,12 +16,12 @@ function Navbar() {
           <Box className="row">
             <Flex {...css.list}>
               <Flex gap={"30px"}>
-                <Alink to={'/about'}>
+                <Alink to={"/about"}>
                   <Link {...css.link} href="/">
                     About Us
                   </Link>
                 </Alink>
-                <Link {...css.link} href="/">
+                <Link {...css.link} href="#project">
                   Projects
                 </Link>
                 <Alink to={"/news"}>
@@ -28,7 +29,7 @@ function Navbar() {
                     News
                   </Link>
                 </Alink>
-                <Link {...css.link} href="/">
+                <Link {...css.link} href="#contact">
                   Contact
                 </Link>
               </Flex>
@@ -48,6 +49,7 @@ function Navbar() {
                 <Link className="navbar-links" href="#">
                   <Phone />
                 </Link>
+                <Language />
                 <NavModal />
               </Flex>
               <Link
