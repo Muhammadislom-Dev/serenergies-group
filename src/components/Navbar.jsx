@@ -77,7 +77,10 @@ export default Navbar;
 
 const css = {
   image: {
-    width: "100px",
+    width: {
+      base: "80px",
+      md: "100px",
+    },
     objectFit: "contain",
     position: "relative",
     right: "90px",
