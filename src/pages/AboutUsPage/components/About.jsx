@@ -48,7 +48,10 @@ const css = {
   },
   name: {
     color: "#fff",
-    fontSize: "30px",
+    fontSize: {
+      base: "22px",
+      md: "30px",
+    },
     marginBottom: "20px",
     fontWeight: 600,
     lineHeight: "35px",
@@ -56,12 +59,21 @@ const css = {
   },
   title: {
     color: "#EDCB3F",
-    fontSize: "35px",
+    fontSize: {
+      base: "25px",
+      md: "35px",
+    },
     marginBottom: "20px",
     fontWeight: 600,
-    lineHeight: "45px",
+    lineHeight: {
+      base: "30px",
+      md: "45px",
+    },
     letterSpacing: "1px",
-    width: "750px",
+    width: {
+      base: "100%",
+      md: "750px",
+    },
   },
   text: {
     color: "#fff",
@@ -71,7 +83,10 @@ const css = {
     fontWeight: 400,
     lineHeight: "25px",
     letterSpacing: "1px",
-    width: "650px",
+    width: {
+      base: "100%",
+      md: "650px",
+    },
     textAlign: "justify",
   },
 };

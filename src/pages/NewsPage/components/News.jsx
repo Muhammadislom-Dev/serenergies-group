@@ -6,7 +6,7 @@ function News() {
     <Box p={"50px 0"}>
       <Box className="container">
         <Heading {...css.name}>All News</Heading>
-        <SimpleGrid gap={"30px"} columns={3}>
+        <SimpleGrid gap={"30px"} columns={{ base: 1, md: 2, lg: 3 }}>
           <Box {...css.box}>
             <Flex {...css.list}>
               <Text {...css.date}>2024-06-13</Text>

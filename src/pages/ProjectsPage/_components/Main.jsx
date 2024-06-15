@@ -38,19 +38,22 @@ const css = {
     objectFit: "cover",
   },
   right: {
-    width: "250px",
+    width: "300px",
     position: "relative",
     top: "-500px",
-    background: "#fff",
+    // background: "#fff",
   },
   logo: {
     width: "100%",
-    height: "80px",
-    objectFit: "cover",
+    height: "100px",
+    objectFit: "contain",
   },
   title: {
     color: "#fff",
-    fontSize: "4rem",
+    fontSize: {
+      base: "2rem",
+      md: "4rem",
+    },
     fontWeight: "bold",
     position: "relative",
     top: "-260px",

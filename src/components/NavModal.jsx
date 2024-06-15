@@ -13,6 +13,7 @@ import Telegram from "../assets/Telegram";
 import Facebook from "../assets/Facebook";
 import Phone from "../assets/Phone";
 import { useTranslation } from "react-i18next";
+import { Link as Alink } from "react-router-dom";
 
 function NavModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,15 +36,19 @@ function NavModal() {
               mt={"80px"}
               flexDirection={"column"}
               gap={"20px"}>
-              <Link {...css.link} href="/">
-                {t("About Us")}
-              </Link>
+              <Alink to={"/about"}>
+                <Link {...css.link} href="/">
+                  {t("About Us")}
+                </Link>
+              </Alink>
               <Link {...css.link} href="/">
                 {t("Projects")}
               </Link>
-              <Link {...css.link} href="/">
-                {t("News")}
-              </Link>
+              <Alink to={"/news"}>
+                <Link {...css.link} href="/">
+                  {t("News")}
+                </Link>
+              </Alink>
               <Link {...css.link} href="/">
                 {t("Contact")}
               </Link>

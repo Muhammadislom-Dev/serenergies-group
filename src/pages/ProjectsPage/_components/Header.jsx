@@ -7,9 +7,9 @@ function Header() {
   const data = dataProject;
   const about = data?.find((item) => item.id === Number(id));
   return (
-    <Box background={"rgb(247,242,240)"} mt={"-140px"} p={"60px 0"}>
+    <Box background={"rgb(247,242,240)"} mt={"-150px"} p={"60px 0"}>
       <Box className="container">
-        <Flex>
+        <Flex flexDirection={{ base: "column", lg: "row" }} gap={"50px"}>
           <Box maxWidth={"56rem"}>
             <Flex gap={"15px"}>
               {about?.tags?.map((item, index) => (
@@ -55,6 +55,9 @@ const css = {
     backgroundColor: "#fff",
     padding: "2rem",
     borderRadius: "10px",
+    height: "230px",
+    position: "relative",
+    zIndex: "99999",
   },
   span: {
     backgroundColor: "rgb(188,125,107)",

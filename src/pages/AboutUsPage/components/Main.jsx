@@ -12,7 +12,10 @@ function Main() {
       </Box>
       <Box position={"relative"} zIndex={"2"} className="container">
         <Heading {...css.title}>{t("Мы строим счастье")}</Heading>
-        <Flex justifyContent={"space-between"} align={"center"}>
+        <Flex
+          justifyContent={"space-between"}
+          flexDirection={{ base: "column", lg: "row" }}
+          align={"center"}>
           <Box {...css.left}>
             <Image {...css.logo} src={LogoIcon} alt="LogoIcon" />
           </Box>
@@ -58,9 +61,15 @@ const css = {
     fontWeight: 600,
   },
   card: {
-    padding: "2.5rem",
+    padding: {
+      base: "1rem",
+      lg: "2.5rem",
+    },
     background: "#fff",
-    width: "55%",
+    width: {
+      base: "100%",
+      lg: "55%",
+    },
   },
   text: {
     color: "#110D60",
@@ -74,9 +83,19 @@ const css = {
     width: "100%",
   },
   left: {
-    width: "29rem",
-    marginRight: "2rem",
+    width: {
+      base: "100%",
+      lg: "29rem",
+    },
+    marginRight: {
+      base: "0",
+      lg: "2rem",
+    },
     display: "flex",
     justifyContent: "center",
+    marginTop: {
+      base: "30px",
+      md: 0,
+    },
   },
 };

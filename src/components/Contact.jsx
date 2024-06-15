@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Fade } from "react-reveal";
 
 function Contact() {
   const [nameValue, setNameValue] = useState("");
@@ -62,68 +63,72 @@ function Contact() {
         <Flex
           flexDirection={{ base: "column-reverse", md: "row" }}
           justifyContent={"space-evenly"}>
-          <Box>
-            <Heading {...css.title}>
-              {t("Bizga qanday savolingiz bor?")}
-            </Heading>
-            <form className="form" action="">
-              <label htmlFor="username">
-                {t("Ism")}
-                <input
-                  type="text"
-                  name="username"
-                  value={nameValue}
-                  onChange={(e) => changeName(e.target.value)}
-                  id="username"
-                  className="contact-input"
-                  placeholder={t("Ismingizni kiriting")}
-                />
-              </label>
-              <label htmlFor="email">
-                {t("Elektron pochta yoki Telegram")}
-                <input
-                  type="text"
-                  name="email"
-                  value={nameValue}
-                  onChange={(e) => changeName(e.target.value)}
-                  id="email"
-                  className="contact-input"
-                  placeholder={t("Elektron pochta yoki Telegram")}
-                />
-              </label>
-              <label htmlFor="phone">
-                {t("Telefon raqami")}
-                <input
-                  type="number"
-                  name="phone"
-                  value={numberValue}
-                  onChange={(e) => changeNumber(e.target.value)}
-                  id="phone"
-                  className="contact-input"
-                  placeholder="+998"
-                />
-              </label>
-              <label htmlFor="text">
-                {t("Sizning xabaringiz")}
-                <textarea
-                  name="text"
-                  className="contact-input"
-                  placeholder={t("Sizning xabaringiz")}
-                  rows="5"
-                  value={textValue}
-                  onChange={(e) => changeText(e.target.value)}
-                  cols="50"
-                  id="text"></textarea>
-              </label>
-              <Button onClick={sendMessage} {...css.button} type="submit">
-                {t("Yuborish")}
-              </Button>
-            </form>
-          </Box>
-          <Image
-            {...css.image}
-            src="http://alstar.uz/assets/contact-527c043b.png"
-          />
+          <Fade bottom>
+            <Box>
+              <Heading {...css.title}>
+                {t("Bizga qanday savolingiz bor?")}
+              </Heading>
+              <form className="form" action="">
+                <label htmlFor="username">
+                  {t("Ism")}
+                  <input
+                    type="text"
+                    name="username"
+                    value={nameValue}
+                    onChange={(e) => changeName(e.target.value)}
+                    id="username"
+                    className="contact-input"
+                    placeholder={t("Ismingizni kiriting")}
+                  />
+                </label>
+                <label htmlFor="email">
+                  {t("Elektron pochta yoki Telegram")}
+                  <input
+                    type="text"
+                    name="email"
+                    value={nameValue}
+                    onChange={(e) => changeName(e.target.value)}
+                    id="email"
+                    className="contact-input"
+                    placeholder={t("Elektron pochta yoki Telegram")}
+                  />
+                </label>
+                <label htmlFor="phone">
+                  {t("Telefon raqami")}
+                  <input
+                    type="number"
+                    name="phone"
+                    value={numberValue}
+                    onChange={(e) => changeNumber(e.target.value)}
+                    id="phone"
+                    className="contact-input"
+                    placeholder="+998"
+                  />
+                </label>
+                <label htmlFor="text">
+                  {t("Sizning xabaringiz")}
+                  <textarea
+                    name="text"
+                    className="contact-input"
+                    placeholder={t("Sizning xabaringiz")}
+                    rows="5"
+                    value={textValue}
+                    onChange={(e) => changeText(e.target.value)}
+                    cols="50"
+                    id="text"></textarea>
+                </label>
+                <Button onClick={sendMessage} {...css.button} type="submit">
+                  {t("Yuborish")}
+                </Button>
+              </form>
+            </Box>
+          </Fade>
+          <Fade bottom>
+            <Image
+              {...css.image}
+              src="http://alstar.uz/assets/contact-527c043b.png"
+            />
+          </Fade>
         </Flex>
       </Box>
     </Box>
