@@ -8,7 +8,9 @@ function Construction() {
   return (
     <Box p={"35px 0"}>
       <Box className="container">
-        <Heading {...css.name}>{t("CONSTRUCTION")}</Heading>
+        <Fade bottom>
+          <Heading {...css.name}>{t("CONSTRUCTION")}</Heading>
+        </Fade>
         <Fade bottom>
           <Flex
             flexDirection={{ base: "column-reverse", md: "row" }}

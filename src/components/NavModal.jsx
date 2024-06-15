@@ -62,7 +62,7 @@ function NavModal() {
                 <Link className="navbar-link" href="#">
                   <Facebook />
                 </Link>
-                <Link className="navbar-link" href="#">
+                <Link className="navbar-link" href="tel:+998958437717">
                   <Phone />
                 </Link>
               </Flex>
@@ -71,8 +71,8 @@ function NavModal() {
                 alignItems={"center"}
                 gap={"10px"}
                 {...css.link}
-                href="tel:+998935527217">
-                +998 93 552 72 17
+                href="tel:tel:+998958437717">
+                +998 95 843 77 17
                 <Box {...css.links}>
                   <Phone />
                 </Box>

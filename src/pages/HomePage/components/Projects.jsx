@@ -17,12 +17,14 @@ function Projects() {
   return (
     <Box id="project" {...css.box}>
       <Box className="container">
-        <Heading color={"#110D60"} {...css.name}>
-          {t("REAL ESTATE")}{" "}
-          <Heading color={"#EDCB3F"} {...css.name}>
-            {t("PROJECTS")}
-          </Heading>{" "}
-        </Heading>
+        <Fade bottom>
+          <Heading color={"#110D60"} {...css.name}>
+            {t("REAL ESTATE")}{" "}
+            <Heading color={"#EDCB3F"} {...css.name}>
+              {t("PROJECTS")}
+            </Heading>{" "}
+          </Heading>
+        </Fade>
         <Fade bottom>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={"30px"}>
             <Box mt={{ base: "-40px", md: 0 }}>

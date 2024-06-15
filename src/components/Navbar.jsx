@@ -48,7 +48,7 @@ function Navbar() {
                 <Link className="navbar-links" href="#">
                   <Facebook />
                 </Link>
-                <Link className="navbar-links" href="#">
+                <Link className="navbar-links" href="tel:+998958437717">
                   <Phone />
                 </Link>
                 <Language />
@@ -59,8 +59,8 @@ function Navbar() {
                 alignItems={"center"}
                 gap={"10px"}
                 {...css.link}
-                href="tel:+998935527217">
-                +998 93 552 72 17
+                href="tel:+998958437717">
+                +998 95 843 77 17
                 <Box {...css.links}>
                   <Phone />
                 </Box>

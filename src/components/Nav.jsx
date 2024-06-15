@@ -47,7 +47,7 @@ function Nav() {
                 <Link className="navbar-links nav-link" href="#">
                   <Facebook />
                 </Link>
-                <Link className="navbar-links nav-link" href="#">
+                <Link className="navbar-links nav-link" href="tel:+998958437717">
                   <Phone />
                 </Link>
                 <NavModal />

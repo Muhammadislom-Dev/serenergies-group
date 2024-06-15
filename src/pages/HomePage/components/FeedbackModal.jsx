@@ -6,11 +6,64 @@ import {
   ModalCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 function FeedbackModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation();
+  const [nameValue, setNameValue] = useState("");
+  const [numberValue, setNumberValue] = useState("");
+  const [textValue, setTextValue] = useState("");
+
+  function changeNumber(item) {
+    setNumberValue(item);
+  }
+
+  function changeName(item) {
+    setNameValue(item);
+  }
+  function changeText(item) {
+    setTextValue(item);
+  }
+
+  const handleClear = () => {
+    setNameValue(null);
+    setNumberValue(null);
+    setTextValue(null);
+  };
+  let bot = {
+    TOKEN: "6765528514:AAG32y-OX4yj8JLVO9ixso8jp7WZ8Khx4LA",
+    chatID: "-1002195363967",
+    message: `
+          Assalomu alaykum sizga yangi xabar!%0A
+          %0AIsmi 👤: ${nameValue}; 
+          %0ATelefon raqami ☎: ${numberValue};
+          %0ASizga xabar ☎: ${textValue};`,
+  };
+
+  function sendMessage(e) {
+    e.preventDefault();
+
+    fetch(
+      `https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${bot.message} `,
+      {
+        method: "GET",
+      }
+    ).then(
+      (success) => {
+        if (success.status === 200) {
+          handleClear();
+        }
+        onClose();
+        window.location.reload();
+        // toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
   return (
     <>
       <Button onClick={onOpen} {...css.buttons}>
@@ -30,6 +83,8 @@ function FeedbackModal() {
               <input
                 type="text"
                 name="username"
+                value={nameValue}
+                onChange={(e) => changeName(e.target.value)}
                 id="username"
                 className="contact-input"
                 placeholder={t("Ismingizni kiriting")}
@@ -42,6 +97,8 @@ function FeedbackModal() {
                 name="email"
                 id="email"
                 className="contact-input"
+                value={nameValue}
+                onChange={(e) => changeName(e.target.value)}
                 placeholder={t("Elektron pochta yoki Telegram")}
               />
             </label>
@@ -51,6 +108,8 @@ function FeedbackModal() {
                 type="number"
                 name="phone"
                 id="phone"
+                value={numberValue}
+                onChange={(e) => changeNumber(e.target.value)}
                 className="contact-input"
                 placeholder="+998"
               />
@@ -63,9 +122,11 @@ function FeedbackModal() {
                 placeholder={t("Sizning xabaringiz")}
                 rows="5"
                 cols="50"
+                value={textValue}
+                onChange={(e) => changeText(e.target.value)}
                 id="text"></textarea>
             </label>
-            <Button {...css.button} type="submit">
+            <Button onClick={sendMessage} {...css.button} type="submit">
               {t("Yuborish")}
             </Button>
           </form>

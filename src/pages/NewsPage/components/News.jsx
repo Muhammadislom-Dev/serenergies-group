@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 function News() {
@@ -7,69 +8,78 @@ function News() {
       <Box className="container">
         <Heading {...css.name}>All News</Heading>
         <SimpleGrid gap={"30px"} columns={{ base: 1, md: 2, lg: 3 }}>
-          <Box {...css.box}>
-            <Flex {...css.list}>
-              <Text {...css.date}>2024-06-13</Text>
-              <Text {...css.button}>Новости</Text>
-            </Flex>
-            <Heading className="news-title" {...css.title}>
-              SOY BO`YI - Жизнь на берегу реки. Новый жилой комплекс класса
-              Бизнес от компании Murad Buildings.
-            </Heading>
-            <Image src="https://mbc.uz/image/news/mainphoto/guUzH8WCRR.webp" />
-            <Text {...css.text} className="news-title">
-              Стиль жизни на берегу реки воплощен в нашем новом жилом комплексе
-              с собственной набережной и озелененной территорией. Здесь будет
-              все для того, чтобы жизнь стала уютнее и приятнее. Благоустроенная
-              территория с фонтаном и различными зонами отдыха создаст
-              уникальную атмосферу, позволяющую по истине насладиться жизнью.
-            </Text>
-            <Link className="news-link" to={"/"}>
-              Подробная
-            </Link>
-          </Box>
-          <Box {...css.box}>
-            <Flex {...css.list}>
-              <Text {...css.date}>2024-06-13</Text>
-              <Text {...css.button}>Новости</Text>
-            </Flex>
-            <Heading className="news-title" {...css.title}>
-              SOY BO`YI - Жизнь на берегу реки. Новый жилой комплекс класса
-              Бизнес от компании Murad Buildings.
-            </Heading>
-            <Image src="https://mbc.uz/image/news/mainphoto/guUzH8WCRR.webp" />
-            <Text {...css.text} className="news-title">
-              Стиль жизни на берегу реки воплощен в нашем новом жилом комплексе
-              с собственной набережной и озелененной территорией. Здесь будет
-              все для того, чтобы жизнь стала уютнее и приятнее. Благоустроенная
-              территория с фонтаном и различными зонами отдыха создаст
-              уникальную атмосферу, позволяющую по истине насладиться жизнью.
-            </Text>
-            <Link className="news-link" to={"/"}>
-              Подробная
-            </Link>
-          </Box>
-          <Box {...css.box}>
-            <Flex {...css.list}>
-              <Text {...css.date}>2024-06-13</Text>
-              <Text {...css.button}>Новости</Text>
-            </Flex>
-            <Heading className="news-title" {...css.title}>
-              SOY BO`YI - Жизнь на берегу реки. Новый жилой комплекс класса
-              Бизнес от компании Murad Buildings.
-            </Heading>
-            <Image src="https://mbc.uz/image/news/mainphoto/guUzH8WCRR.webp" />
-            <Text {...css.text} className="news-title">
-              Стиль жизни на берегу реки воплощен в нашем новом жилом комплексе
-              с собственной набережной и озелененной территорией. Здесь будет
-              все для того, чтобы жизнь стала уютнее и приятнее. Благоустроенная
-              территория с фонтаном и различными зонами отдыха создаст
-              уникальную атмосферу, позволяющую по истине насладиться жизнью.
-            </Text>
-            <Link className="news-link" to={"/"}>
-              Подробная
-            </Link>
-          </Box>
+          <Fade bottom>
+            <Box {...css.box}>
+              <Flex {...css.list}>
+                <Text {...css.date}>2024-06-13</Text>
+                <Text {...css.button}>Новости</Text>
+              </Flex>
+              <Heading className="news-title" {...css.title}>
+                SOY BO`YI - Жизнь на берегу реки. Новый жилой комплекс класса
+                Бизнес от компании Murad Buildings.
+              </Heading>
+              <Image src="https://mbc.uz/image/news/mainphoto/guUzH8WCRR.webp" />
+              <Text {...css.text} className="news-title">
+                Стиль жизни на берегу реки воплощен в нашем новом жилом
+                комплексе с собственной набережной и озелененной территорией.
+                Здесь будет все для того, чтобы жизнь стала уютнее и приятнее.
+                Благоустроенная территория с фонтаном и различными зонами отдыха
+                создаст уникальную атмосферу, позволяющую по истине насладиться
+                жизнью.
+              </Text>
+              <Link className="news-link" to={"/"}>
+                Подробная
+              </Link>
+            </Box>
+          </Fade>
+          <Fade bottom>
+            <Box {...css.box}>
+              <Flex {...css.list}>
+                <Text {...css.date}>2024-06-13</Text>
+                <Text {...css.button}>Новости</Text>
+              </Flex>
+              <Heading className="news-title" {...css.title}>
+                SOY BO`YI - Жизнь на берегу реки. Новый жилой комплекс класса
+                Бизнес от компании Murad Buildings.
+              </Heading>
+              <Image src="https://mbc.uz/image/news/mainphoto/guUzH8WCRR.webp" />
+              <Text {...css.text} className="news-title">
+                Стиль жизни на берегу реки воплощен в нашем новом жилом
+                комплексе с собственной набережной и озелененной территорией.
+                Здесь будет все для того, чтобы жизнь стала уютнее и приятнее.
+                Благоустроенная территория с фонтаном и различными зонами отдыха
+                создаст уникальную атмосферу, позволяющую по истине насладиться
+                жизнью.
+              </Text>
+              <Link className="news-link" to={"/"}>
+                Подробная
+              </Link>
+            </Box>
+          </Fade>
+          <Fade bottom>
+            <Box {...css.box}>
+              <Flex {...css.list}>
+                <Text {...css.date}>2024-06-13</Text>
+                <Text {...css.button}>Новости</Text>
+              </Flex>
+              <Heading className="news-title" {...css.title}>
+                SOY BO`YI - Жизнь на берегу реки. Новый жилой комплекс класса
+                Бизнес от компании Murad Buildings.
+              </Heading>
+              <Image src="https://mbc.uz/image/news/mainphoto/guUzH8WCRR.webp" />
+              <Text {...css.text} className="news-title">
+                Стиль жизни на берегу реки воплощен в нашем новом жилом
+                комплексе с собственной набережной и озелененной территорией.
+                Здесь будет все для того, чтобы жизнь стала уютнее и приятнее.
+                Благоустроенная территория с фонтаном и различными зонами отдыха
+                создаст уникальную атмосферу, позволяющую по истине насладиться
+                жизнью.
+              </Text>
+              <Link className="news-link" to={"/"}>
+                Подробная
+              </Link>
+            </Box>
+          </Fade>
         </SimpleGrid>
       </Box>
     </Box>

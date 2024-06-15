@@ -1,13 +1,16 @@
 import { Box, Heading, Image, SimpleGrid } from "@chakra-ui/react";
 import { partnerData } from "../../../data";
 import { useTranslation } from "react-i18next";
+import { Fade } from "react-reveal";
 
 function Partner() {
   const { t } = useTranslation();
   return (
     <Box id="gallery" padding={"30px 0"} mt="50px">
       <Box className="container">
-        <Heading {...css.title}>{t("OUR CLIENTS")}</Heading>
+        <Fade bottom>
+          <Heading {...css.title}>{t("OUR CLIENTS")}</Heading>
+        </Fade>
         <SimpleGrid
           gap={{ base: "10px", md: "20px" }}
           columns={{ base: 2, md: 3, xl: 4 }}>

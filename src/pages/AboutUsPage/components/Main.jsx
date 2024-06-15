@@ -2,6 +2,7 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import BgImage from "../../../assets/build.jpg";
 import LogoIcon from "../../../assets/black.png";
 import { useTranslation } from "react-i18next";
+import { Fade } from "react-reveal";
 
 function Main() {
   const { t } = useTranslation();
@@ -11,7 +12,9 @@ function Main() {
         <Image className="bg-image" src={BgImage} alt="BgImage" />
       </Box>
       <Box position={"relative"} zIndex={"2"} className="container">
-        <Heading {...css.title}>{t("Мы строим счастье")}</Heading>
+        <Fade>
+          <Heading {...css.title}>{t("Мы строим счастье")}</Heading>
+        </Fade>
         <Flex
           justifyContent={"space-between"}
           flexDirection={{ base: "column", lg: "row" }}

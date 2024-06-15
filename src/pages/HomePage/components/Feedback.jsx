@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import AvatarIcon from "../../../assets/avatar.svg";
 import FeedbackModal from "./FeedbackModal";
 import { useTranslation } from "react-i18next";
+import { Fade } from "react-reveal";
 
 function Feedback() {
   var settings = {
@@ -46,12 +47,14 @@ function Feedback() {
             flexDirection={{ base: "column", md: "row" }}
             align={{ base: "baseline", md: "center" }}
             justifyContent={"space-between"}>
-            <Heading mb={"30px"} color={"#110D60"} {...css.name}>
-              {t("Reviews")}{" "}
-              <Heading color={"#EDCB3F"} {...css.name}>
-                {t("About Us")}
-              </Heading>{" "}
-            </Heading>
+            <Fade bottom>
+              <Heading mb={"30px"} color={"#110D60"} {...css.name}>
+                {t("Reviews")}{" "}
+                <Heading color={"#EDCB3F"} {...css.name}>
+                  {t("About Us")}
+                </Heading>{" "}
+              </Heading>
+            </Fade>
             <FeedbackModal />
           </Flex>
           <Slider {...settings}>
