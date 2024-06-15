@@ -24,8 +24,8 @@ function Projects() {
           </Heading>{" "}
         </Heading>
         <Fade bottom>
-          <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap={"30px"}>
-            <Box>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={"30px"}>
+            <Box mt={{ base: "-40px", md: 0 }}>
               <Link to={"/project/1"}>
                 <Box {...css.view}>
                   <ViewIcon color={"#fff"} fontSize={"18px"} />
@@ -35,7 +35,7 @@ function Projects() {
               <Image {...css.image} src={ZaraHome} />
               <Text {...css.text}>ZARA HOME</Text>
             </Box>
-            <Box>
+            <Box mt={{ base: "-40px", md: 0 }}>
               <Link to={"/project/2"}>
                 <Box {...css.view}>
                   <ViewIcon color={"#fff"} fontSize={"18px"} />
@@ -45,7 +45,7 @@ function Projects() {
               <Image {...css.image} src={Swiss} />
               <Text {...css.text}>SWISS</Text>
             </Box>
-            <Box>
+            <Box mt={{ base: "-40px", md: 0 }}>
               <Link to={"/project/3"}>
                 <Box {...css.view}>
                   <ViewIcon fontSize={"18px"} color={"#fff"} />
@@ -120,7 +120,7 @@ const css = {
     display: "flex",
     alignItems: "center",
     fontSize: {
-      base: "25px",
+      base: "23px",
       md: "30px",
       xl: "45px",
     },
