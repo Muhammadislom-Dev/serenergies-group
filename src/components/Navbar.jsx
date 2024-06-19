@@ -8,6 +8,7 @@ import NavModal from "./NavModal";
 import { Link as Alink } from "react-router-dom";
 import Language from "./Language";
 import { useTranslation } from "react-i18next";
+import Whatsapp from "../assets/Whatsapp";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -50,6 +51,9 @@ function Navbar() {
                 </Link>
                 <Link className="navbar-links" href="tel:+998958437717">
                   <Phone />
+                </Link>
+                <Link className="navbar-links" href="tel:+998958437717">
+                  <Whatsapp />
                 </Link>
                 <Language />
                 <NavModal />

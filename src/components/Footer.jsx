@@ -6,6 +6,7 @@ import Phone from "../assets/Phone";
 import Iframe from "react-iframe";
 import OfficeImage from "../assets/05.svg";
 import { useTranslation } from "react-i18next";
+import Whatsapp from "../assets/Whatsapp";
 
 function Footer() {
   const { t } = useTranslation();
@@ -48,8 +49,11 @@ function Footer() {
             <Link className="navbar-link" href="#">
               <Facebook />
             </Link>
-            <Link className="navbar-link" href="#">
+            <Link className="navbar-link" href="tel:+998958437717">
               <Phone />
+            </Link>
+            <Link className="navbar-link" href="tel:+998958437717">
+              <Whatsapp />
             </Link>
           </Flex>
         </Box>

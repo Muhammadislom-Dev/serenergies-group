@@ -7,6 +7,7 @@ import Phone from "../assets/Phone";
 import NavModal from "./NavModal";
 import { Link as Alink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Whatsapp from "../assets/Whatsapp";
 
 function Nav() {
   const { t } = useTranslation();
@@ -47,8 +48,15 @@ function Nav() {
                 <Link className="navbar-links nav-link" href="#">
                   <Facebook />
                 </Link>
-                <Link className="navbar-links nav-link" href="tel:+998958437717">
+                <Link
+                  className="navbar-links nav-link"
+                  href="tel:+998958437717">
                   <Phone />
+                </Link>
+                <Link
+                  className="navbar-links nav-link"
+                  href="tel:+998958437717">
+                  <Whatsapp />
                 </Link>
                 <NavModal />
               </Flex>

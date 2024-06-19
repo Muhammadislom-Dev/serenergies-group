@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import LogoAnimation from "../assets/logo-animatsiya.mp4";
+import LogoAnimation from "../assets/Comp 111.mp4";
 
 function Loader() {
   const videoRef = useRef(null);
@@ -18,7 +18,7 @@ function Loader() {
     setTimeout(() => {
       removeLoader();
       window.location.href = "/";
-    }, 4000);
+    }, 4500);
   }, []);
 
   return (

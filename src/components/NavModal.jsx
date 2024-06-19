@@ -14,6 +14,7 @@ import Facebook from "../assets/Facebook";
 import Phone from "../assets/Phone";
 import { useTranslation } from "react-i18next";
 import { Link as Alink } from "react-router-dom";
+import Whatsapp from "../assets/Whatsapp";
 
 function NavModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -64,6 +65,9 @@ function NavModal() {
                 </Link>
                 <Link className="navbar-link" href="tel:+998958437717">
                   <Phone />
+                </Link>
+                <Link className="navbar-links" href="tel:+998958437717">
+                  <Whatsapp />
                 </Link>
               </Flex>
               <Link
