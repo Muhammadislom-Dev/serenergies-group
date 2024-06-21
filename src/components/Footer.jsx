@@ -58,7 +58,7 @@ function Footer() {
               </Link>
             </Flex>
             <Text {...css.subtext}>
-              © 2024 SER ENERGIES GROUP. Все права защищены.
+              © 2024 SER ENERGIES GROUP. {t("Все права защищены.")}
             </Text>
           </Box>
           <Iframe
