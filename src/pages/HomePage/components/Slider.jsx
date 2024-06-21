@@ -1,9 +1,10 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Mousewheel } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 
 import { Fade } from "react-reveal";
 
@@ -27,11 +28,14 @@ function Slider() {
             <Fade left>
               <Swiper
                 loop={true}
-                navigation={true}
-                mousewheel={true}
+                effect="fade"
+                navigation
+                autoplay={{
+                  delay: 1500,
+                  disableOnInteraction: false,
+                }}
                 keyboard={true}
-                cssMode={true}
-                modules={[Navigation, Mousewheel]}
+                modules={[Autoplay, Navigation]}
                 className="mySwiper">
                 <SwiperSlide>
                   <Image {...css.image} src={Project3} />
@@ -86,11 +90,13 @@ function Slider() {
             <Fade right>
               <Swiper
                 loop={true}
-                navigation={true}
-                mousewheel={true}
+                effect="fade"
+                autoplay={{
+                  delay: 1500,
+                  disableOnInteraction: false,
+                }}
                 keyboard={true}
-                cssMode={true}
-                modules={[Navigation, Mousewheel]}
+                modules={[Autoplay, EffectFade]}
                 className="mySwiper">
                 <SwiperSlide>
                   <Image {...css.image} src={ZaraHome1} />
