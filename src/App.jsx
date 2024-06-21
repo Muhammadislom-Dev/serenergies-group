@@ -6,6 +6,7 @@ import NewsPage from "./pages/NewsPage/NewsPage";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import Loader from "./components/Loader";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import Phone from "./assets/Phone";
 
 function App() {
   const videoRef = sessionStorage.getItem("loader");
@@ -26,6 +27,11 @@ function App() {
       ) : (
         <Loader />
       )}
+      <div className="home-fixed">
+        <a href="tel:+998958437717">
+          <Phone />
+        </a>
+      </div>
     </div>
   );
 }
