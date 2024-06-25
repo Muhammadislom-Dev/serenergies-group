@@ -53,6 +53,11 @@ function NavModal() {
               <Link {...css.link} href="/">
                 {t("Contact")}
               </Link>
+              <Alink to={"/architecture"}>
+                <Link {...css.link} href="/">
+                  {t("Architecture")}
+                </Link>
+              </Alink>
               <Flex align={"center"} gap={"25px"}>
                 <Link className="navbar-link" href="#">
                   <Instagram />

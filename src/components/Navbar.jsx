@@ -35,6 +35,11 @@ function Navbar() {
                 <Link {...css.link} href="#contact">
                   {t("Contact")}
                 </Link>
+                <Alink to={"/architecture"}>
+                  <Link {...css.link} href="/">
+                    {t("Architecture")}
+                  </Link>
+                </Alink>
               </Flex>
               <Alink to="/">
                 <Image {...css.image} src={LogoIcon} />
@@ -87,7 +92,10 @@ const css = {
     },
     objectFit: "contain",
     position: "relative",
-    right: "90px",
+    right: {
+      base: "100px",
+      lg: "30px",
+    },
   },
   link: {
     color: "#fff",

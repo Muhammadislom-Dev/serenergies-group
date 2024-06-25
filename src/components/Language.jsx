@@ -18,6 +18,11 @@ const languageData = [
     value: "uz",
     title: "UZ",
   },
+  {
+    id: 4,
+    value: "ar",
+    title: "AR",
+  },
 ];
 
 function Language() {

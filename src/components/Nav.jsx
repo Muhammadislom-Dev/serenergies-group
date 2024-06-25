@@ -34,6 +34,11 @@ function Nav() {
                 <Link {...css.link} href="#contact">
                   {t("Contact")}
                 </Link>
+                <Alink to={"/architecture"}>
+                  <Link {...css.link} href="/">
+                    {t("Architecture")}
+                  </Link>
+                </Alink>
               </Flex>
               <Alink to="/">
                 <Image {...css.image} src={LogoIcon} />

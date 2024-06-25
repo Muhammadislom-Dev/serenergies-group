@@ -7,6 +7,7 @@ import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import Loader from "./components/Loader";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 import Phone from "./assets/Phone";
+import Architecture from "./pages/Architecture/Architecture";
 
 function App() {
   const videoRef = sessionStorage.getItem("loader");
@@ -15,9 +16,15 @@ function App() {
     <div>
       {videoRef ? (
         <>
+          <div className="home-fixed">
+            <a href="tel:+998958437717">
+              <Phone />
+            </a>
+          </div>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/news" element={<NewsPage />} />
+            <Route path="/architecture" element={<Architecture />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/project/:id" element={<ProjectsPage />} />
             <Route path="*" element={<h1>404 Not Found</h1>} />
@@ -27,11 +34,6 @@ function App() {
       ) : (
         <Loader />
       )}
-      <div className="home-fixed">
-        <a href="tel:+998958437717">
-          <Phone />
-        </a>
-      </div>
     </div>
   );
 }
