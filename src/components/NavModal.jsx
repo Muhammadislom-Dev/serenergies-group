@@ -16,14 +16,14 @@ import { useTranslation } from "react-i18next";
 import { Link as Alink } from "react-router-dom";
 import Whatsapp from "../assets/Whatsapp";
 
-function NavModal() {
+function NavModal({color}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation();
   return (
     <>
       <HamburgerIcon
         className="modal-button"
-        color={"white"}
+        color={color}
         fontSize={"30px"}
         onClick={onOpen}
       />

@@ -11,7 +11,7 @@ function Header() {
       <Box className="container">
         <Flex flexDirection={{ base: "column", lg: "row" }} gap={"50px"}>
           <Box maxWidth={"56rem"}>
-            <Flex gap={"15px"}>
+            <Flex flexWrap={"wrap"} gap={"15px"}>
               {about?.tags?.map((item, index) => (
                 <Box {...css.span} key={index}>
                   {item?.title}

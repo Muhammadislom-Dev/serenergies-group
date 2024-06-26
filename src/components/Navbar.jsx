@@ -61,7 +61,7 @@ function Navbar() {
                   <Whatsapp />
                 </Link>
                 <Language />
-                <NavModal />
+                <NavModal color={"white"} />
               </Flex>
               <Link
                 display={"flex"}

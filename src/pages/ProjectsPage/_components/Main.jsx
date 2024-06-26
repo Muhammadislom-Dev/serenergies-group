@@ -38,7 +38,10 @@ const css = {
     objectFit: "cover",
   },
   right: {
-    width: "300px",
+    width: {
+      base: "auto",
+      md: "300px",
+    },
     position: "relative",
     top: "-500px",
     // background: "#fff",

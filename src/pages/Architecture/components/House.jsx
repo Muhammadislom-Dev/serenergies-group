@@ -11,7 +11,7 @@ function House() {
     <Box p={"30px 0"}>
       <Box className="container">
         <Heading {...css.title}>REAL HOUSE ARCHITECTURE</Heading>
-        <SimpleGrid mt="30px" gap={"20px"} columns={3}>
+        <SimpleGrid mt="30px" gap={"20px"} columns={{ base: 1, md: 2, lg: 3 }}>
           <Box>
             <Image {...css.image} src={House1} />
             <Heading {...css.name}>Modern Design</Heading>
@@ -52,8 +52,14 @@ const css = {
   },
   title: {
     fontFamily: "cursive",
-    fontSize: "40px",
-    lineHeight: "45px",
+    fontSize: {
+      base: "25px",
+      md: "45px",
+    },
+    lineHeight: {
+      base: "30px",
+      md: "45px",
+    },
     fontWeight: "600",
     color: "#110D60",
   },

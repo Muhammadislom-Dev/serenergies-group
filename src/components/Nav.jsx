@@ -63,7 +63,7 @@ function Nav() {
                   href="tel:+998958437717">
                   <Whatsapp />
                 </Link>
-                <NavModal />
+                <NavModal color="black" />
               </Flex>
               <Link
                 display={"flex"}
@@ -91,7 +91,10 @@ const css = {
     width: "100px",
     objectFit: "contain",
     position: "relative",
-    right: "90px",
+    right: {
+      base: "130px",
+      md: "90px",
+    },
   },
   link: {
     color: "#110D60",
