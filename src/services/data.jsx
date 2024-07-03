@@ -6,12 +6,21 @@ import NewProjectFour from "../assets/new-project4.webp";
 import NewProjectFive from "../assets/new-project5.webp";
 import NewProjectSix from "../assets/new-project6.webp";
 import NewProjectSeven from "../assets/new-project7.webp";
+import NewProjectEight from "../assets/mini2.jpg";
 import Logo6 from "../assets/partner6.jpg";
 import Logo2 from "../assets/partner1.jpg";
 import Logo10 from "../assets/partner2.png";
 import Logo3 from "../assets/partner3.jpg";
 import Logo5 from "../assets/partner5.jpg";
 import Logo12 from "../assets/partner7.jpg";
+import Logo11 from "../assets/minnie.png";
+
+import SwissTime from "../assets/swiss-time.mp4";
+import ZaraHomeVideo from "../assets/zarahome.mp4";
+import StradivariusVideo from "../assets/stradivarius.mp4";
+import Lining from "../assets/lining.mp4";
+import Colehan from "../assets/colehan.mp4";
+import Mini from "../assets/mini.mp4";
 
 export const dataProject = [
   {
@@ -29,6 +38,7 @@ export const dataProject = [
         title: "Household products",
       },
     ],
+    video: ZaraHomeVideo,
   },
   {
     id: 2,
@@ -53,6 +63,7 @@ export const dataProject = [
         title: "Other",
       },
     ],
+    video: SwissTime,
   },
   {
     id: 3,
@@ -77,6 +88,7 @@ export const dataProject = [
         title: "Women's clothing",
       },
     ],
+    video: Lining,
   },
   {
     id: 4,
@@ -125,6 +137,7 @@ export const dataProject = [
         title: "Children's clothing",
       },
     ],
+    video: StradivariusVideo,
   },
   {
     id: 6,
@@ -173,5 +186,27 @@ export const dataProject = [
         title: "Shoes",
       },
     ],
+    video: Colehan,
+  },
+  {
+    id: 8,
+    title: "MINNIE4KIDS",
+    door: "3-nd floor",
+    text: "MINNIE4KIDS is a retail brand specializing in children's clothing, accessories, and toys. The brand is known for its high-quality products, trendy designs, and focus on comfort and safety for children.",
+    image: NewProjectEight,
+    logo: Logo11,
+    workingHours: "Mon - Thu: 10:00 - 23:00 Fri - Sun: 10:00 - 00:00",
+    websiteUrl: "",
+    tags: [
+      {
+        id: 1,
+        title: "Kids",
+      },
+      {
+        id: 2,
+        title: "Toys",
+      },
+    ],
+    video: Mini,
   },
 ];

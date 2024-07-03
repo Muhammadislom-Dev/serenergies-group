@@ -1,11 +1,20 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import { dataProject } from "../../../services/data";
+import { useEffect, useRef } from "react";
 
 function Header() {
   const { id } = useParams();
   const data = dataProject;
   const about = data?.find((item) => item.id === Number(id));
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
   return (
     <Box background={"rgb(247,242,240)"} mt={"-150px"} p={"60px 0"}>
       <Box className="container">
@@ -36,6 +45,17 @@ function Header() {
             <Text {...css.subname}>{about?.workingHours}</Text>
           </Box>
         </Flex>
+
+        <video
+          className="project-video"
+          ref={videoRef}
+          loop
+          muted
+          width="100%"
+          controls>
+          <source src={about.video} type="video/mp4" />
+        </video>
+        <div className="project-home-video"></div>
       </Box>
     </Box>
   );

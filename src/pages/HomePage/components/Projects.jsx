@@ -79,12 +79,14 @@ function Projects() {
               <Text {...css.text}>STRADIVARIUS</Text>
             </Box>
             <Box mt={"-40px"}>
-              <Box {...css.view}>
-                <ViewIcon fontSize={"18px"} color={"#fff"} />
-              </Box>
-              <Box {...css.soon}>Soon</Box>
+              <Link to={"/project/8"}>
+                <Box {...css.view}>
+                  <ViewIcon fontSize={"18px"} color={"#fff"} />
+                </Box>
+              </Link>
+              <Box {...css.new}>New</Box>
               <Image {...css.image} src={Kids} />
-              <Text {...css.text}>MINI4KIDS</Text>
+              <Text {...css.text}>MINNIE4KIDS</Text>
             </Box>
             <Box mt={"-40px"}>
               <Link to={"/project/6"}>

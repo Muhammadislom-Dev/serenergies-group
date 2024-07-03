@@ -27,6 +27,13 @@
   margin-top: -110px;
 }
 
+.project-video {
+  width: 100%;
+  height: auto !important;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
 .box-video {
   position: absolute;
   top: 0;
