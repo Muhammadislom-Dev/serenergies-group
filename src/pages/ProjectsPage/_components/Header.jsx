@@ -47,7 +47,9 @@ function Header() {
         </Flex>
 
         <video
-          className="project-video"
+          className={`project-video ${
+            Number(id) === 4 || 5 ? "reels-video" : ""
+          }`}
           ref={videoRef}
           loop
           muted

@@ -29,9 +29,13 @@
 
 .project-video {
   width: 100%;
-  height: auto !important;
+  height: auto;
   object-fit: cover;
   margin-top: 50px;
+}
+
+.reels-video {
+  height: 700px !important;
 }
 
 .box-video {
@@ -222,5 +226,9 @@
   }
   .footer-location {
     width: 100% !important;
+  }
+
+  .reels-video {
+    height: 500px !important;
   }
 }

@@ -21,6 +21,8 @@ import StradivariusVideo from "../assets/stradivarius.mp4";
 import Lining from "../assets/lining.mp4";
 import Colehan from "../assets/colehan.mp4";
 import Mini from "../assets/mini.mp4";
+import Oysho from "../assets/oysho.mp4";
+import Piquadro from "../assets/piquadro.mp4";
 
 export const dataProject = [
   {
@@ -113,6 +115,7 @@ export const dataProject = [
         title: "Accessories",
       },
     ],
+    video: Oysho,
   },
   {
     id: 5,
@@ -162,6 +165,7 @@ export const dataProject = [
         title: "Clothes",
       },
     ],
+    video: Piquadro,
   },
   {
     id: 7,
