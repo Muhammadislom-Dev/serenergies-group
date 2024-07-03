@@ -2,6 +2,7 @@ import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-reveal";
+import ContactImage from "../assets/contact.png";
 
 function Contact() {
   const [nameValue, setNameValue] = useState("");
@@ -124,10 +125,7 @@ function Contact() {
             </Box>
           </Fade>
           <Fade bottom>
-            <Image
-              {...css.image}
-              src="http://alstar.uz/assets/contact-527c043b.png"
-            />
+            <Image {...css.image} src={ContactImage} />
           </Fade>
         </Flex>
       </Box>
