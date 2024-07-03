@@ -4,7 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import { resorce } from "./locales";
 
-const supportedLngs = ["en", "uz", "ru", "ar"];
+const supportedLngs = ["en", "uz", "ru", "ar", "oz"];
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)

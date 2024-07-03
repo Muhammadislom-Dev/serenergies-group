@@ -1,14 +1,15 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
-import ZaraHome from "../../../assets/image2.png";
-import Swiss from "../../../assets/image4.png";
-import Project3 from "../../../assets/image1.png";
+import ZaraHome from "../../../assets/zarahome1.jpg";
+import Swiss from "../../../assets/swiss1.jpg";
+import Project3 from "../../../assets/lining5.jpg";
 import { useTranslation } from "react-i18next";
-import Oysho from "../../../assets/oysho.png";
-import Stradivarius from "../../../assets/stradivarius.png";
-import Kids from "../../../assets/kids.png";
-import OyshoOne from "../../../assets/oysho1.png";
-import Piquadro from "../../../assets/piquadro.png";
+import Oysho from "../../../assets/oysho3.jpg";
+import Stradivarius from "../../../assets/stradivarius2.jpg";
+import Kids from "../../../assets/mini2.jpg";
+import OyshoOne from "../../../assets/oysho2.jpg";
+import Piquadro from "../../../assets/piquadro1.jpg";
+import Colehaan from "../../../assets/colehan1.jpg";
 import { ViewIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 
@@ -104,6 +105,16 @@ function Projects() {
               <Box {...css.new}>New</Box>
               <Image {...css.image} src={OyshoOne} />
               <Text {...css.text}>OYSHO</Text>
+            </Box>
+            <Box mt={"-40px"}>
+              <Link to={"/project/7"}>
+                <Box {...css.view}>
+                  <ViewIcon fontSize={"18px"} color={"#fff"} />
+                </Box>
+              </Link>
+              <Box {...css.new}>New</Box>
+              <Image {...css.image} src={Colehaan} />
+              <Text {...css.text}>COLE HAAN</Text>
             </Box>
           </SimpleGrid>
         </Fade>

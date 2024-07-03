@@ -26,7 +26,7 @@ function Statistic() {
                       className="static-number"
                       start={0}
                       duration={2.75}
-                      end="4"
+                      end="10"
                       delay={0}
                     />
                   )}

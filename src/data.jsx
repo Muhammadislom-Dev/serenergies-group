@@ -7,7 +7,7 @@ import Logo7 from "./assets/partner7.jpg";
 import Logo8 from "./assets/partner8.jpg";
 import Logo9 from "./assets/logo1.jpg";
 import Logo10 from "./assets/partner2.png";
-import Logo11 from "./assets/partner9.jpg";
+import Logo11 from "./assets/minnie.png";
 
 export const partnerData = [
   {

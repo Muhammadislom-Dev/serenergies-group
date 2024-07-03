@@ -5,11 +5,13 @@ import NewProjectThree from "../assets/new-project3.webp";
 import NewProjectFour from "../assets/new-project4.webp";
 import NewProjectFive from "../assets/new-project5.webp";
 import NewProjectSix from "../assets/new-project6.webp";
+import NewProjectSeven from "../assets/new-project7.webp";
 import Logo6 from "../assets/partner6.jpg";
 import Logo2 from "../assets/partner1.jpg";
 import Logo10 from "../assets/partner2.png";
 import Logo3 from "../assets/partner3.jpg";
 import Logo5 from "../assets/partner5.jpg";
+import Logo12 from "../assets/partner7.jpg";
 
 export const dataProject = [
   {
@@ -145,6 +147,30 @@ export const dataProject = [
       {
         id: 3,
         title: "Clothes",
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "COLE HAAN",
+    door: "1-st floor",
+    text: "Cole Haan is an American brand of men's and women's footwear and accessories that serves markets worldwide. The company was founded in Chicago, Illinois in 1928. Cole Haan currently has its headquarters in both New York City and Greenland, New Hampshire, United States.",
+    image: NewProjectSeven,
+    logo: Logo12,
+    workingHours: "Mon - Thu: 10:00 - 23:00 Fri - Sun: 10:00 - 00:00",
+    websiteUrl: "colehaan.uz",
+    tags: [
+      {
+        id: 1,
+        title: "Accessories",
+      },
+      {
+        id: 2,
+        title: "Bags",
+      },
+      {
+        id: 3,
+        title: "Shoes",
       },
     ],
   },
