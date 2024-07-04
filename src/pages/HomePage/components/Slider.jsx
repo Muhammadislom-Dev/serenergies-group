@@ -41,8 +41,10 @@ import ZaraHome1 from "../../../assets/zarahome1.jpg";
 import ZaraHome2 from "../../../assets/zarahome2.jpg";
 import ZaraHome3 from "../../../assets/zarahome3.jpg";
 import ZaraHome4 from "../../../assets/zarahome4.jpg";
+import { useTranslation } from "react-i18next";
 
 function Slider() {
+  const { t } = useTranslation();
   return (
     <Box p={"35px 0"}>
       <Box className="container">
@@ -105,14 +107,8 @@ function Slider() {
           </Box>
           <Fade right>
             <Box>
-              <Heading {...css.title}>ПРИВАТНЫЕ ТЕРРАСЫ</Heading>
-              <Text {...css.text}>
-                Первое и уникальное в своём роде предложение на рынке
-                недвижимости. Приобретая апартаменты на 9 этаже, покупатель
-                становится владельцем собственной приватной террасы. Ещё одно
-                новшество резиденции — башни с пентхаусами с персональным
-                доступом через лифт.
-              </Text>
+              <Heading {...css.title}>{t("famousName")}</Heading>
+              <Text {...css.text}>{t("famousText")}</Text>
             </Box>
           </Fade>
         </Flex>
@@ -123,15 +119,8 @@ function Slider() {
           gap={{ base: "25px", md: "70px" }}>
           <Fade left>
             <Box>
-              <Heading {...css.title}>ПРИВАТНЫЕ ТЕРРАСЫ</Heading>
-              <Text {...css.text}>
-                Уникальное в своём роде решение продумано не только с
-                коммерческой точки зрения в соответствии с мировыми требованиями
-                и опытом других стран, но также предусматривает максимально
-                комфортное нахождение на шопинг-авеню жителей и гостей
-                резиденции. Общая длина шопинг-авеню по всему периметру превысит
-                2 км.
-              </Text>
+              <Heading {...css.title}>{t("famousName")}</Heading>
+              <Text {...css.text}>{t("famousText1")}</Text>
             </Box>
           </Fade>
           <Box {...css.box}>

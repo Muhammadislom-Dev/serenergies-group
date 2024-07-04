@@ -41,7 +41,7 @@ function Statistic() {
                       className="static-number"
                       start={0}
                       duration={2.75}
-                      end="10"
+                      end="120"
                       delay={0}
                     />
                   )}
@@ -71,7 +71,7 @@ function Statistic() {
                       className="static-number"
                       start={900}
                       duration={2.75}
-                      end="1000"
+                      end="100"
                       delay={0}
                     />
                   )}
