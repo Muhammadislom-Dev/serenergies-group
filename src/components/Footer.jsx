@@ -57,8 +57,11 @@ function Footer() {
                 <Whatsapp />
               </Link>
             </Flex>
-            <Text {...css.subtext}>
+            <Text  pt={'30px'} {...css.subtext}>
               © 2024 SER ENERGIES GROUP. {t("Все права защищены.")}
+            </Text>
+             <Text {...css.subtext}>
+              Разработано <a href="tel:+998990027391">разработчик</a> c 2024
             </Text>
           </Box>
           <Iframe
@@ -110,6 +113,5 @@ const css = {
     fontSize: "16px",
     lineHeight: "24px",
     fontWeight: 400,
-    paddingTop: "60px",
   },
 };
